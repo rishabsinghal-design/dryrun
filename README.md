@@ -13,6 +13,7 @@ dryrun/
 ├── test.py            # Minimal Python smoke test
 ├── test_true.js       # Jest unit tests for true.js
 ├── rag_pipeline.py    # LangGraph-based RAG pipeline (PDF / DOCX / Markdown)
+├── hello_world.rs     # Rust hello-world program
 └── modernization/     # Assets and notes related to the Python → JS migration
 ```
 
@@ -21,7 +22,7 @@ dryrun/
 ## Files
 
 ### `true.js`
-A simple JavaScript module that exports a `helloWorld()` function returning `"Hello, World!"`.
+A simple JavaScript module that exports a `helloWorld()` function returning "Hello, World!".
 
 ```js
 const helloWorld = require('./true');
@@ -34,6 +35,15 @@ The original Python implementation of `hello_world()`. Superseded by `true.js` a
 ```python
 from true import hello_world
 print(hello_world())  # Hello, World!
+```
+
+### `hello_world.rs`
+A simple Rust program that prints "Hello, World!".
+
+```rust
+fn main() {
+    println!("Hello, World!");
+}
 ```
 
 ### `test_true.js`
