@@ -14,6 +14,7 @@ dryrun/
 ├── test_true.js       # Jest unit tests for true.js
 ├── rag_pipeline.py    # LangGraph-based RAG pipeline (PDF / DOCX / Markdown)
 ├── hello_world.rs     # Rust hello-world program
+├── hello_world.go     # Go hello-world program
 └── modernization/     # Assets and notes related to the Python → JS migration
 ```
 
@@ -44,6 +45,23 @@ A simple Rust program that prints "Hello, World!".
 fn main() {
     println!("Hello, World!");
 }
+```
+
+### `hello_world.go`
+A simple Go program that prints "Hello, World!".
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
+
+```bash
+go run hello_world.go
 ```
 
 ### `test_true.js`
@@ -82,6 +100,13 @@ python rag_pipeline.py path/to/your/document.pdf
 ---
 
 ## Getting Started
+
+### Go
+
+```bash
+go run hello_world.go
+# Hello, World!
+```
 
 ### JavaScript
 
