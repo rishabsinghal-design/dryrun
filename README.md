@@ -8,6 +8,10 @@ A sandbox repository for experimenting with basic functionality, language modern
 
 ```
 dryrun/
+├── calculator/
+│   ├── index.html     # Calculator – markup
+│   ├── style.css      # Calculator – iOS-inspired dark theme
+│   └── script.js      # Calculator – logic & keyboard support
 ├── true.py            # (Deprecated) Python hello-world utility
 ├── true.js            # JavaScript hello-world utility (replaces true.py)
 ├── test.py            # Minimal Python smoke test
@@ -21,6 +25,41 @@ dryrun/
 ---
 
 ## Files
+
+### `calculator/` — HTML / CSS / JS Calculator
+
+A fully-featured, zero-dependency browser calculator with an iOS-inspired dark theme.
+
+**Features**
+- Basic arithmetic: `+`, `−`, `×`, `÷`
+- Percentage (`%`) and sign-toggle (`+/−`)
+- Decimal point input
+- Chained operations (e.g. `3 + 4 × 2`)
+- Division-by-zero error handling
+- Floating-point noise suppression (`toPrecision(12)`)
+- Responsive layout (works on mobile)
+- Full **keyboard support**
+
+| Key(s)          | Action              |
+|-----------------|---------------------|
+| `0`–`9`         | Digit input         |
+| `.` or `,`      | Decimal point       |
+| `+` `-` `*` `/` | Operators           |
+| `Enter` or `=`  | Evaluate            |
+| `Backspace`     | Delete last digit   |
+| `Escape`        | Clear (AC)          |
+| `%`             | Percent             |
+
+**Usage** — open directly in any browser, no build step needed:
+
+```bash
+open calculator/index.html
+# or
+xdg-open calculator/index.html   # Linux
+start calculator/index.html      # Windows
+```
+
+---
 
 ### `true.js`
 A simple JavaScript module that exports a `helloWorld()` function returning "Hello, World!".
@@ -100,6 +139,13 @@ python rag_pipeline.py path/to/your/document.pdf
 ---
 
 ## Getting Started
+
+### Calculator
+
+```bash
+# Just open the file in your browser — no server or build step required
+open calculator/index.html
+```
 
 ### Go
 
