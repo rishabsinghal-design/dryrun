@@ -1,0 +1,18 @@
+# Development / test dependencies only.
+# These are NOT runtime dependencies; they do not affect the application's
+# dependency footprint (BRD NFR-5).
+#
+# Install:
+#   pip install -r requirements-dev.txt
+#
+# Run tests:
+#   pytest tests/ -v
+#
+# Run with coverage (NFR-3 / AC-9):
+#   pytest tests/ --cov=calculator --cov-report=term-missing --cov-fail-under=90
+#
+# Run with per-test timing (NFR-1 / AC-10):
+#   pytest tests/ --durations=0
+
+pytest>=7.0
+pytest-cov>=4.0
